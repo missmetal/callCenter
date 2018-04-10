@@ -1,21 +1,14 @@
 package empleados;
 
-public class Empleado {
-	private boolean estaDisponible;
-
-	/**
-	 * @return the estaDisponible
-	 */
-	public boolean isEstaDisponible() {
-		return estaDisponible;
-	}
-
-	/**
-	 * @param estaDisponible the estaDisponible to set
-	 */
-	public void setEstaDisponible(boolean estaDisponible) {
-		this.estaDisponible = estaDisponible;
-	}
+public interface Empleado {
+	
+	public boolean isEstaDisponible();
+	public void setEstaDisponible(boolean estaDisponible);
+	public Empleado getSiguiente();
+	public void setSiguiente(Empleado empleado);
+	public String getNombre();
+	public void setNombre(String nombre);
+	public void atender(boolean disponible);
 	
 
 }
